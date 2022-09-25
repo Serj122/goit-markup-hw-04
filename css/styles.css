@@ -52,7 +52,7 @@ ul {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 .section {
@@ -414,21 +414,20 @@ header {
 
 .clients-icon {
   margin: auto;
- }
+}
 
 .clients-list:last-child {
   margin-right: 0px;
 }
 
-.clients-item:hover,
-.clients-item:focus {
-  fill: var(--primary-accent-color);
-  
-  }
+.clients-list:hover,
+.clients-list:focus {
+  border: 1px solid var(--primary-accent-color);
+}
 
-.clients-item:hover .clients-list,
-.clients-item:focus .clients-list {
-  border-color: var(--primary-accent-color);
+.clients-list:hover .clients-item,
+.clients-list:focus .clients-item {
+  fill: var(--primary-accent-color);
 }
 
 /* Футер */
@@ -439,6 +438,41 @@ header {
 
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.thubr-addres {
+  margin-right: 70px;
+}
+
+.join-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.join-up .social-item {
+  fill: var(--secondary-accent-color);
+  background-color: var(--primary-text-color);
+  border-radius: 50%;
+}
+
+.social-item:hover,
+.social-item:focus {
+  background-color: var(--primary-accent-color);
+  border-radius: 50%;
+}
+
+.social-item:hover .social-icon,
+.social-item:focus .social-icon {
+  fill: var(--secondary-accent-color);
 }
 
 .footer .logo {
@@ -533,6 +567,12 @@ header {
 .project-item {
   width: calc(100%-30 / 3);
   margin: 15px;
+}
+
+.project-item:hover,
+.project-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .title-text {
