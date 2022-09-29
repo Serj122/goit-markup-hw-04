@@ -165,7 +165,6 @@ header {
   margin-right: auto;
 
   max-width: 1600px;
-  height: 600px;
 
   background-image: linear-gradient(
       to right,
@@ -174,6 +173,8 @@ header {
     ),
     url(../images/Overlay.jpg);
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .button {
@@ -359,16 +360,18 @@ header {
 }
 
 .social-item {
-  display: inline-block;
   width: 44px;
   height: 44px;
   fill: var(--primary-text-color);
 
-  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   cursor: pointer;
 }
 
-.social-list {
+social-item .social-list {
   margin-right: 10px;
 }
 
@@ -404,16 +407,14 @@ header {
 }
 
 .clients-item {
-  display: flex;
   width: 106px;
   height: 60px;
   fill: var(--primary-text-color);
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-}
-
-.clients-icon {
-  margin: auto;
 }
 
 .clients-list:last-child {
@@ -456,6 +457,7 @@ header {
   text-transform: uppercase;
 
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .join-up .social-item {
@@ -539,6 +541,8 @@ header {
 .examples .button:focus {
   color: var(--secondary-accent-color);
   background-color: var(--primary-accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .examples-titles {
